@@ -19,6 +19,7 @@ body, html {
   --color-pewter: #b9b7bd;
   --color-seashell: #e7d2cc;
   --color-blue-gray: #647C90;
+  --color-dark-gray: #746C70;
 }
 
 body {
@@ -58,16 +59,18 @@ body {
   z-index: 1;
 }
 
-.s1 {
+.blue-container {
   width: 60%;
   height: 300px;
   background-color: var(--color-blue-gray);
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
 }
 
 .circle {
   border-radius: 100%;
   background-color: var(--color-seashell);
-
   width: 250px;
   height: 250px;
   font-size: 4rem;
@@ -75,6 +78,16 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -125px;
+  right: -125px;
 }
+
+.verticalbar {
+  width: 35%;
+  height: 100px;
+  background-color: var(--color-dark-gray);
+  position: fixed;
+  left: 400px;
+  transform: rotate(90deg);
+}
+
